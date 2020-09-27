@@ -1,0 +1,11 @@
+.board {
+    max-width: fit-content;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: rgb(57, 23, 87);
+}
+
+.game-title {
+    font-size: x-large;
+    font-weight: 750;
+}

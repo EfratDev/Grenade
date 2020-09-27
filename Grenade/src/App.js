@@ -1,22 +1,32 @@
-import React, { Fragment } from "react";
+import React from "react";
 
-import Game from "./components/Game/Game";
-import GameInfo from "./components/GameInfo/GameInfo";
+import Board from "./components/Board/Board";
 import "./App.css";
 
 const App = () => {
     return (
-        <Fragment>
-            <Game name="snake" />
-            <GameInfo
-                name="snake"
-                plays={243}
-                rating={9.5}
-                published={new Date()}
-                description="snake game, eat the apples, don't hit the wall!"
-                like={700}
-            />
-        </Fragment>
+        <div id="container">
+            <div className="row justify-content-center">
+                <Board
+                    user={{
+                        id: 1,
+                        username: "FlowerPower2",
+                        link: "https://github.com/FlowerPower2/Snake",
+                        gamesID: [1],
+                    }}
+                    game={{
+                        id: 1,
+                        userId: 1,
+                        name: "Snake",
+                        plays: 243,
+                        rating: 9.5,
+                        publishDate: new Date().toLocaleDateString(),
+                        likes: 700,
+                        description: "Eat the apples, don't hit the walls!",
+                    }}
+                />
+            </div>
+        </div>
     );
 };
 
