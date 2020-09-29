@@ -9,7 +9,7 @@ import "./UserLink.css";
 function UserLink({ user }) {
     return (
         <a
-            className="userLink"
+            className="userLink nounderline"
             href={user.link}
             target="_blank"
             rel="noopener noreferrer"

@@ -1,3 +1,19 @@
-userLink {
+a:link {
+    text-decoration: none;
+    color: greenyellow;
+}
+
+a:visited {
+    text-decoration: none;
+    color: greenyellow;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+a:active {
+    text-decoration: none;
     color: greenyellow;
 }

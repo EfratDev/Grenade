@@ -8,7 +8,7 @@ import InfoButtons from "./InfoButtons/InfoButtons";
 
 const Board = ({ user, game }) => {
     return (
-        <div className="board card text-white mb-3">
+        <div className="board card text-white col-md-9 text-center mt-5 mb-5">
             <div className="card-body">
                 <GameHeader name={game.name} user={user} />
                 <Game id={game.id} />

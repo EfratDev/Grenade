@@ -1,7 +1,7 @@
 .game-frame {
     width: 1024px;
     height: 768px;
-    text-align: center;
     margin: 1rem;
     border: 1px solid black;
+    border-radius: 25px;
 }

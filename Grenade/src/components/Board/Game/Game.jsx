@@ -4,11 +4,7 @@ import "./Game.css";
 
 const Game = ({ id }) => {
     return (
-        <iframe
-            className="game-frame row justify-content-center"
-            title={id}
-            src={`/games/${id}`}
-        ></iframe>
+        <iframe className="game-frame" title={id} src={`/games/${id}`}></iframe>
     );
 };
 
