@@ -2,6 +2,7 @@ import React from "react";
 import { string, object } from "prop-types";
 
 import UserLink from "./UserLink/UserLink";
+import "./GameHeader.css";
 
 function GameHeader({ name, user }) {
     return (

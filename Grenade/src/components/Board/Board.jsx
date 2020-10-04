@@ -1,17 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
-
-import "./Board.css";
-import GameHeader from "./GameHeader/GameHeader";
-import Game from "./Game/Game";
+import BoardTop from "./BoardTop/BoardTop";
 import InfoButtons from "./InfoButtons/InfoButtons";
+import "./Board.css";
 
 const Board = ({ user, game }) => {
     return (
-        <div className="board card text-white col-md-9 text-center mt-5 mb-5">
+        <div className="board card text-white text-center mt-5 mb-5">
             <div className="card-body">
-                <GameHeader name={game.name} user={user} />
-                <Game id={game.id} />
+                <BoardTop game={game} user={user}></BoardTop>
                 <InfoButtons game={game} />
                 <p>{game.description}</p>
             </div>

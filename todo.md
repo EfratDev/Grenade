@@ -1,7 +1,9 @@
 logo title
 bar
-backround
 user
+games
+
+~~backround~~
 
 ~~margin top~~
 

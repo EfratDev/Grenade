@@ -1,5 +1,5 @@
 import React from "react";
-
+import NavBar from "./components/NavBar/NavBar";
 import Board from "./components/Board/Board";
 import "./App.css";
 
@@ -7,6 +7,7 @@ const App = () => {
     return (
         <div id="container">
             <div className="row justify-content-center">
+                <NavBar></NavBar>
                 <Board
                     user={{
                         id: 1,
