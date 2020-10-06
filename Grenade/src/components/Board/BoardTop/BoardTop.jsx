@@ -1,6 +1,6 @@
 import React from "react";
-import GameHeader from "../GameHeader/GameHeader";
-import Game from "../Game/Game";
+import GameHeader from "./GameHeader/GameHeader";
+import Game from "./Game/Game";
 import { object } from "prop-types";
 
 const BoardTop = ({ game, user }) => {

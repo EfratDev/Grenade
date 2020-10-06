@@ -1,7 +1,7 @@
 import React from "react";
 import { object } from "prop-types";
 
-import InfoButton from "./InfoButton/InfoButton";
+import InfoButton from "../../buttons/InfoButton/InfoButton";
 
 function InfoButtons({ game }) {
     return (

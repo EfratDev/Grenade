@@ -7,6 +7,7 @@ import {
     faHeart,
     faCalendarAlt,
 } from "@fortawesome/free-solid-svg-icons";
+import Button from "react-bootstrap/Button";
 
 import "./InfoButton.css";
 
@@ -19,9 +20,9 @@ const Cards = {
 
 const InfoButton = ({ type, info }) => {
     return (
-        <button type="button" className={`btn btn-${Cards[type].color}`}>
+        <Button variant={`outline-${Cards[type].color}`}>
             <FontAwesomeIcon icon={Cards[type].icon} /> {info}
-        </button>
+        </Button>
     );
 };
 

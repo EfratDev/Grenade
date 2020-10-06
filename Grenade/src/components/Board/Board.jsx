@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import BoardTop from "./BoardTop/BoardTop";
 import InfoButtons from "./InfoButtons/InfoButtons";
+
 import "./Board.css";
 
 const Board = ({ user, game }) => {

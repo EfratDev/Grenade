@@ -1,0 +1,13 @@
+.img-responsive {
+    height: auto;
+    width: auto;
+    max-height: 60px;
+    max-width: 250px;
+}
+
+.navbar {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0;
+    padding-bottom: 0;
+}

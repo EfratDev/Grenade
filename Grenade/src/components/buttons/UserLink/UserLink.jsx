@@ -15,7 +15,7 @@ function UserLink({ user }) {
             rel="noopener noreferrer"
         >
             <FontAwesomeIcon icon={faUser} />
-            <b>{user.username}</b>
+            <b> {user.username}</b>
         </a>
     );
 }
