@@ -6,7 +6,11 @@ import UserLink from "../buttons/UserLink/UserLink";
 
 function LoginStatus({ user }) {
     if (user && user.username) {
-        return <UserLink user={user} />;
+        return (
+            <Button variant="outline-warning">
+                <UserLink user={user} />
+            </Button>
+        );
     } else {
         return (
             <div>
