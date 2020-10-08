@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import "./SearchBox.css";
 
-function SeachBox() {
+function SearchBox() {
     return (
         <div class="search-box">
             <input type="text" class="search-input" />
@@ -16,4 +16,4 @@ function SeachBox() {
     );
 }
 
-export default SeachBox;
+export default SearchBox;

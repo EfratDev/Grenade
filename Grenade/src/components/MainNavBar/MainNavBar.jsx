@@ -69,14 +69,6 @@ const MainNavBar = ({ user }) => {
                         </Nav.Link>
                     </td>
                 </Nav>
-                {/* <Form inline>
-                    <FormControl
-                        type="text"
-                        placeholder="Search"
-                        className="mr-sm-2"
-                    />
-                    <FontAwesomeIcon color="white" icon={faSearch} />
-                </Form> */}
                 <SearchBox />
                 <LoginStatus user={user} />
             </Navbar>

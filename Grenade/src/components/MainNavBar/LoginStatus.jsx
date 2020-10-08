@@ -2,15 +2,12 @@ import React from "react";
 import { oneOfType, bool, object } from "prop-types";
 
 import Button from "react-bootstrap/Button";
-import UserLink from "../buttons/UserLink/UserLink";
+
+import UserConnectedButton from "./UserConnectedButton/UserConnectedButton";
 
 function LoginStatus({ user }) {
     if (user && user.username) {
-        return (
-            <Button variant="outline-warning">
-                <UserLink user={user} />
-            </Button>
-        );
+        return <UserConnectedButton user={user} />;
     } else {
         return (
             <div>
