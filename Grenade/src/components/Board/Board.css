@@ -1,0 +1,10 @@
+.board {
+    padding: 1rem;
+    background-color: rgba(26, 21, 54, 0.91);
+    border: none;
+}
+
+.game-title {
+    font-size: x-large;
+    font-weight: 750;
+}

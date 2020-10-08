@@ -1,0 +1,16 @@
+.btn {
+    text-transform: none;
+}
+
+.btn b {
+    max-width: 0;
+    -webkit-transition: max-width 0s;
+    transition: max-width 2.5s;
+    display: inline-block;
+    vertical-align: top;
+    white-space: pre;
+    overflow: hidden;
+}
+.btn:hover b {
+    max-width: 30rem;
+}
