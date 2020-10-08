@@ -3,8 +3,6 @@ import { oneOfType, bool, object } from "prop-types";
 
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import Form from "react-bootstrap/Form";
-import FormControl from "react-bootstrap/FormControl";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -12,12 +10,11 @@ import {
     faHome,
     faQuestionCircle,
     faGhost,
-    faSearch,
 } from "@fortawesome/free-solid-svg-icons";
 
 import "./MainNavBar.css";
 import LoginStatus from "./LoginStatus";
-import SearchBox from "./SerachBox/SeachBox";
+import SearchBox from "./SearchBox/SearchBox";
 
 const MainNavBar = ({ user }) => {
     return (
