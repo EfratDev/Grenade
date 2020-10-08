@@ -10,8 +10,8 @@ import "./UserConnectedButton.css";
 function UserConnectedButton({ user }) {
     return (
         <Button href={user.link} variant="outline-warning">
+            <b>{user.username} </b>
             <FontAwesomeIcon icon={faUser} />
-            <b> {user.username}</b>
         </Button>
     );
 }

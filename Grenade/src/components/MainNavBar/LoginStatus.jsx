@@ -3,7 +3,7 @@ import { oneOfType, bool, object } from "prop-types";
 
 import Button from "react-bootstrap/Button";
 
-import UserConnectedButton from "./UserConnectedButton/UserConnectedButton";
+import UserConnectedButton from "../buttons/UserConnectedButton/UserConnectedButton";
 
 function LoginStatus({ user }) {
     if (user && user.username) {
