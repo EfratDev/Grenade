@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 function Home(props) {
-    return <div>hello</div>;
+    return <div>Home</div>;
 }
 
 Home.propTypes = {};

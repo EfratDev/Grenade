@@ -25,4 +25,5 @@ td {
 
 .bg-dark{
     border-color: rgb(51, 54, 56);
+    border: none;
 }

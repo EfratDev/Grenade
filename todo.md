@@ -1,11 +1,14 @@
-user page
-games page
+views
+chosen tab glow on navbar
+log in/ sign up page 
+log in/ sign up sweetalert
 star button text color
 hello animation
+dynamic background
 choose themes
 style search colors
 add sound affect
-games instead of games/
+refactor
 
 ~~expend user loged in button~~
 
@@ -13,7 +16,7 @@ games instead of games/
 
 ~~bar~~
 
-~~login~~
+~~login button~~
 
 ~~logo~~
 

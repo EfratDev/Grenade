@@ -19,6 +19,9 @@ import "./MainNavBar.css";
 import LoginStatus from "./LoginStatus";
 import SearchBox from "./SearchBox/SearchBox";
 import Home from "../views/Home";
+import Games from "../views/Games"
+import Users from "../views/Users"
+import AboutUs from "../views/AboutUs"
 
 const MainNavBar = ({ user }) => {
     return (
@@ -68,7 +71,7 @@ const MainNavBar = ({ user }) => {
                             </Nav.Link>
                         </td>
                         <td className="mt-4">
-                            <Nav.Link href="/about">
+                            <Nav.Link href="/about-us">
                                 <FontAwesomeIcon
                                     icon={faQuestionCircle}
                                     color="rgb(47, 153, 224)"
@@ -83,6 +86,9 @@ const MainNavBar = ({ user }) => {
                 </Navbar>
                 <Switch>
                     <Route exact path="/" component={Home}></Route>
+                    <Route path="/games" component={Games}></Route>
+                    <Route path="/users" component={Users}></Route>
+                    <Route path="/about-us" component={AboutUs}></Route>
                 </Switch>
             </BrowserRouter>
         </div>
