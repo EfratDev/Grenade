@@ -9,6 +9,9 @@ choose themes
 style search colors
 add sound affect
 refactor
+background button
+
+~~backgrounds~~
 
 ~~expend user loged in button~~
 
