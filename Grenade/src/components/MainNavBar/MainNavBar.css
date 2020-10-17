@@ -15,6 +15,14 @@ td {
     text-align: center;
 }
 
+.fix-spacing {
+    padding-right: 0rem !important;
+    padding-left: 0.96rem !important;
+    margin-right: 0rem !important;
+    margin-left: 0rem !important;
+
+}
+
 .bg-dark{
     border-color: rgb(51, 54, 56);
 }

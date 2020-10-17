@@ -22,13 +22,12 @@ import Home from "../views/Home";
 
 const MainNavBar = ({ user }) => {
     return (
-        <div className="w-100 pl-3">
+        <div className="w-100 fix-spacing">
             <BrowserRouter>
                 <Navbar
                     fixed="fixed-top"
                     bg="dark"
                     variant="dark"
-                    className="mb-1"
                 >
                     <Navbar.Brand>
                         <img
