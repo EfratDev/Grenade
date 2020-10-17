@@ -30,7 +30,7 @@ const App = () => {
         <div id="container">
             <div className="row justify-content-center">
                 <MainNavBar user={user} />
-                <Board user={creator} game={game} />
+                {/* <Board user={creator} game={game} /> */}
             </div>
         </div>
     );
