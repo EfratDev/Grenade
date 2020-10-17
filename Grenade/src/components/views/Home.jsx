@@ -1,8 +1,12 @@
 import React from "react";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 
-function Home(props) {
-    return <div>Home</div>;
+import Background from "../Backgrounds/Background"
+
+const json = {backgroundType: "classicBright"}
+
+function Home() {
+    return <Background {...json}/>;
 }
 
 Home.propTypes = {};

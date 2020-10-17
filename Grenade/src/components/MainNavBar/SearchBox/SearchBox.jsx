@@ -5,10 +5,10 @@ import "./SearchBox.css";
 
 function SearchBox() {
     return (
-        <div class="search-box">
-            <input type="text" class="search-input" />
-            <a href="bla" class="search-btn">
-                <div class="search-ico">
+        <div className="search-box">
+            <input type="text" className="search-input" />
+            <a href="bla" className="search-btn">
+                <div className="search-ico">
                     <FontAwesomeIcon icon={faSearch} color="rgb(7, 182, 80)" />
                 </div>
             </a>

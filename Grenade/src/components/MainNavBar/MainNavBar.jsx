@@ -3,9 +3,7 @@ import { oneOfType, bool, object } from "prop-types";
 
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import Route from "react-router-dom/Route";
-import Switch from "react-router-dom/Switch";
-import BrowserRouter from "react-router-dom/BrowserRouter";
+import {Route, Switch, BrowserRouter} from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -25,7 +23,7 @@ import AboutUs from "../views/AboutUs"
 
 const MainNavBar = ({ user }) => {
     return (
-        <div className="w-100 fix-spacing">
+        <span className="w-100 fix-spacing">
             <BrowserRouter>
                 <Navbar
                     fixed="fixed-top"
@@ -41,7 +39,7 @@ const MainNavBar = ({ user }) => {
                     </Navbar.Brand>
                     <Nav className="mr-auto">
                         <td className="mt-4">
-                            <Nav.Link exact href="/">
+                            <Nav.Link exact="true" href="/">
                                 <FontAwesomeIcon
                                     icon={faHome}
                                     size="2x"
@@ -91,7 +89,7 @@ const MainNavBar = ({ user }) => {
                     <Route path="/about-us" component={AboutUs}></Route>
                 </Switch>
             </BrowserRouter>
-        </div>
+        </span>
     );
 };
 
