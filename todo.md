@@ -5,6 +5,7 @@ hello animation
 choose themes
 style search colors
 add sound affect
+games instead of games/
 
 ~~expend user loged in button~~
 
