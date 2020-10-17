@@ -18,11 +18,11 @@ import {
 import "./MainNavBar.css";
 import LoginStatus from "./LoginStatus";
 import SearchBox from "./SearchBox/SearchBox";
-import Home from "../../views/Home";
+import Home from "../views/Home";
 
 const MainNavBar = ({ user }) => {
     return (
-        <div className="w-100 pl-2">
+        <div className="w-100 pl-3">
             <BrowserRouter>
                 <Navbar
                     fixed="fixed-top"
