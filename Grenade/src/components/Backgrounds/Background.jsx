@@ -1,20 +1,23 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react";
+import PropTypes from "prop-types";
 
 import Particles from "react-tsparticles";
 
-import BackgroundMask from "./schemes/BackgroundMask"
-import Default from "./schemes/Default"
-import Connect from "./schemes/Connect"
-import MultipleImages from "./schemes/MultipleImages"
-import Shadow from "./schemes/Shadow"
+// eslint-disable-next-line
+import BackgroundMask from "./themes/BackgroundMask";
+// eslint-disable-next-line
+import Default from "./themes/Default";
+// eslint-disable-next-line
+import Connect from "./themes/Connect";
+// eslint-disable-next-line
+import MultipleImages from "./themes/MultipleImages";
+// eslint-disable-next-line
+import Shadow from "./themes/Shadow";
 
-function Background({backgroundType}) {
-  return (
-      <Particles params={Connect}></Particles>
-    )
+function Background({ backgroundType }) {
+    return <Particles params={BackgroundMask}></Particles>;
 }
 
-Background.propTypes = {backgroundType: PropTypes.string}
+Background.propTypes = { backgroundType: PropTypes.string };
 
-export default Background
+export default Background;
