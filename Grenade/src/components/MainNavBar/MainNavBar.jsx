@@ -11,16 +11,17 @@ import {
     faHome,
     faQuestionCircle,
     faGhost,
-    faSettings,
+    faCog,
 } from "@fortawesome/free-solid-svg-icons";
 
 import "./MainNavBar.css";
 import LoginStatus from "./LoginStatus";
-import SearchBox from "./SearchBox/SearchBox";
 import Home from "../views/Home";
 import Games from "../views/Games";
 import Users from "../views/Users";
 import AboutUs from "../views/AboutUs";
+import Button from "react-bootstrap/esm/Button";
+import NavLink from "react-bootstrap/esm/NavLink";
 
 const MainNavBar = ({ user }) => {
     return (
@@ -76,13 +77,15 @@ const MainNavBar = ({ user }) => {
                             </Nav.Link>
                         </td>
                     </Nav>
-                    {/* <FontAwesomeIcon
-                        icon={fa}
-                        color="rgb(116, 35, 221)"
-                        size="2x"
-                    /> */}
-                    <SearchBox />
                     <LoginStatus user={user} />
+
+                    <Nav.Link className="pr-0" href="/about-us">
+                        <FontAwesomeIcon
+                            icon={faCog}
+                            color="rgb(177, 169, 176)"
+                            size="2x"
+                        />
+                    </Nav.Link>
                 </Navbar>
                 <Switch>
                     <Route exact path="/" component={Home}></Route>

@@ -11,6 +11,7 @@
     white-space: pre;
     overflow: hidden;
 }
+
 .btn:hover b {
     max-width: 30rem;
 }
