@@ -14,10 +14,18 @@ import MultipleImages from "./themes/MultipleImages";
 // eslint-disable-next-line
 import Shadow from "./themes/Shadow";
 
-function Background({ backgroundType }) {
-    return <Particles params={BackgroundMask}></Particles>;
+const Backgrounds = {
+    BackgroundMask: BackgroundMask,
+    Default: Default,
+    Connect: Connect,
+    MultipleImages: MultipleImages,
+    Shadow: Shadow,
+};
+
+function Background({ type }) {
+    return <Particles params={type}></Particles>;
 }
 
 Background.propTypes = { backgroundType: PropTypes.string };
 
-export default Background;
+export { Background, Backgrounds };
