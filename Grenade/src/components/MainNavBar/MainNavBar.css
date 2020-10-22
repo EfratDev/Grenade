@@ -6,6 +6,8 @@
 }
 
 .navbar {
+    padding-bottom: 0;
+    padding-top: 0;
     padding-left: 2rem;
     padding-right: 2rem;
     max-height: 70px;
@@ -13,6 +15,8 @@
 
 td {
     text-align: center;
+    padding-bottom: 0;
+    padding-top: 0;
 }
 
 .fix-spacing {
@@ -25,4 +29,33 @@ td {
 .bg-dark {
     border-color: rgb(51, 54, 56);
     border: none;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.nav-link {
+    padding-bottom: 0.1rem;
+    padding-top: 0.65rem;
+    margin-top: 0rem;
+    color: var(--text-primary);
+    width: 6rem;
+    text-decoration: none;
+    filter: grayscale(50%);
+    transition: var(--transision-speed);
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.nav-link:hover {
+    background: rgb(33, 31, 44);
+    filter: grayscale(0%);
 }

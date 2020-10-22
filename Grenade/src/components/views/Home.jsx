@@ -4,7 +4,7 @@ import React from "react";
 import { Background, Backgrounds } from "../Backgrounds/Background";
 
 function Home() {
-    return <Background type={Backgrounds.Shadow} />;
+    return <Background type={Backgrounds.BackgroundMask} />;
 }
 
 Home.propTypes = {};

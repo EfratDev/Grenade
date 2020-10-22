@@ -20,14 +20,18 @@ import Home from "../views/Home";
 import Games from "../views/Games";
 import Users from "../views/Users";
 import AboutUs from "../views/AboutUs";
-import Button from "react-bootstrap/esm/Button";
-import NavLink from "react-bootstrap/esm/NavLink";
 
 const MainNavBar = ({ user }) => {
     return (
         <span className="w-100 fix-spacing">
             <BrowserRouter>
-                <Navbar fixed="fixed-top" bg="dark" variant="dark">
+                <Navbar
+                    collapseOnSelect
+                    expand="lg"
+                    fixed="fixed-top"
+                    bg="dark"
+                    variant="dark"
+                >
                     <Navbar.Brand>
                         <img
                             className="img-fluid img-responsive"
@@ -35,57 +39,59 @@ const MainNavBar = ({ user }) => {
                             alt="Grenade"
                         />
                     </Navbar.Brand>
-                    <Nav className="mr-auto">
-                        <td className="mt-4">
-                            <Nav.Link exact="true" href="/">
-                                <FontAwesomeIcon
-                                    icon={faHome}
-                                    size="2x"
-                                    color="rgb(199, 67, 67)"
-                                />
-                                <p>Home</p>
-                            </Nav.Link>
-                        </td>
-                        <td className="mt-4">
-                            <Nav.Link href="/games">
-                                <FontAwesomeIcon
-                                    icon={faGamepad}
-                                    size="2x"
-                                    color="rgb(7, 182, 80)"
-                                />
-                                <p>Games</p>
-                            </Nav.Link>
-                        </td>
-                        <td className="mt-4">
-                            <Nav.Link href="/users">
-                                <FontAwesomeIcon
-                                    icon={faGhost}
-                                    color="rgb(116, 35, 221)"
-                                    size="2x"
-                                />
-                                <p>Users</p>
-                            </Nav.Link>
-                        </td>
-                        <td className="mt-4">
-                            <Nav.Link href="/about-us">
-                                <FontAwesomeIcon
-                                    icon={faQuestionCircle}
-                                    color="rgb(47, 153, 224)"
-                                    size="2x"
-                                />
-                                <p>About Us</p>
-                            </Nav.Link>
-                        </td>
-                    </Nav>
-                    <LoginStatus user={user} />
-
-                    <Nav.Link className="pr-0" href="/about-us">
-                        <FontAwesomeIcon
-                            icon={faCog}
-                            color="rgb(177, 169, 176)"
-                            size="2x"
-                        />
-                    </Nav.Link>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Collapse id="responsive-navbar-nav">
+                        <Nav className="mr-auto">
+                            <td>
+                                <Nav.Link exact="true" href="/">
+                                    <FontAwesomeIcon
+                                        icon={faHome}
+                                        size="2x"
+                                        color="rgb(199, 67, 67)"
+                                    />
+                                    <p>Home</p>
+                                </Nav.Link>
+                            </td>
+                            <td>
+                                <Nav.Link href="/games">
+                                    <FontAwesomeIcon
+                                        icon={faGamepad}
+                                        size="2x"
+                                        color="rgb(7, 182, 80)"
+                                    />
+                                    <p>Games</p>
+                                </Nav.Link>
+                            </td>
+                            <td>
+                                <Nav.Link href="/users">
+                                    <FontAwesomeIcon
+                                        icon={faGhost}
+                                        color="rgb(116, 35, 221)"
+                                        size="2x"
+                                    />
+                                    <p>Users</p>
+                                </Nav.Link>
+                            </td>
+                            <td>
+                                <Nav.Link href="/about-us">
+                                    <FontAwesomeIcon
+                                        icon={faQuestionCircle}
+                                        color="rgb(47, 153, 224)"
+                                        size="2x"
+                                    />
+                                    <p>About Us</p>
+                                </Nav.Link>
+                            </td>
+                        </Nav>
+                        <LoginStatus user={user} />
+                        <button className="pr-0" href="/about-us">
+                            <FontAwesomeIcon
+                                icon={faCog}
+                                color="rgb(177, 169, 176)"
+                                size="2x"
+                            />
+                        </button>
+                    </Navbar.Collapse>
                 </Navbar>
                 <Switch>
                     <Route exact path="/" component={Home}></Route>
