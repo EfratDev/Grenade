@@ -11,6 +11,8 @@
     padding-left: 2rem;
     padding-right: 2rem;
     max-height: 70px;
+    background-color: rgb(21, 17, 26);
+    border: none;
 }
 
 td {
@@ -27,7 +29,6 @@ td {
 }
 
 .bg-dark {
-    border-color: rgb(51, 54, 56);
     border: none;
 }
 
@@ -46,7 +47,6 @@ button:focus {
     margin-top: 0rem;
     color: var(--text-primary);
     width: 6rem;
-    filter: grayscale(50%);
     -webkit-transition: -webkit-transform 5s ease-in-out;
     transition: transform 8s ease-in-out;
 }
@@ -56,8 +56,7 @@ p {
 }
 
 .nav-link:hover {
-    background: rgb(33, 31, 44);
-    filter: grayscale(0%);
+    background: #211f2c;
 }
 
 .nav-link:hover svg {

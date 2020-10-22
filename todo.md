@@ -1,11 +1,11 @@
 views
-chosen tab glow on navbar
+chosen tab design on navbar
+background mask static image
 log in/ sign up page
 log in/ sign up sweetalert
 star button text color
 hello animation
 choose themes
-style search colors
 add sound affect
 refactor
 background button

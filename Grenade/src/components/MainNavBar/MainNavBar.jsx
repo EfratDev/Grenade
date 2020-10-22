@@ -29,7 +29,6 @@ const MainNavBar = ({ user }) => {
                     collapseOnSelect
                     expand="lg"
                     fixed="fixed-top"
-                    bg="dark"
                     variant="dark"
                 >
                     <Navbar.Brand>

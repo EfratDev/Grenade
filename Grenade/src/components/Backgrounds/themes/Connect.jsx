@@ -1,7 +1,7 @@
 const Connect = {
     background: {
         color: {
-            value: "#000000",
+            value: "#211f2c",
         },
         image: "",
         position: "",

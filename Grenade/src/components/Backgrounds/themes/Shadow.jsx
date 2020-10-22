@@ -1,5 +1,8 @@
 const Shadow = {
     particles: {
+        color: {
+            value: "#211f2c",
+        },
         number: {
             value: 50,
         },
