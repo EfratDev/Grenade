@@ -11,7 +11,6 @@ import {
     faHome,
     faQuestionCircle,
     faGhost,
-    faCog,
 } from "@fortawesome/free-solid-svg-icons";
 
 import "./MainNavBar.css";
@@ -20,6 +19,7 @@ import Home from "../views/Home";
 import Games from "../views/Games";
 import Users from "../views/Users";
 import AboutUs from "../views/AboutUs";
+import SettingsButton from "../buttons/SettingsButton/SettingsButton";
 
 const MainNavBar = ({ user }) => {
     return (
@@ -84,13 +84,7 @@ const MainNavBar = ({ user }) => {
                             </td>
                         </Nav>
                         <LoginStatus user={user} />
-                        <button className="pr-0" href="/about-us">
-                            <FontAwesomeIcon
-                                icon={faCog}
-                                color="rgb(177, 169, 176)"
-                                size="2x"
-                            />
-                        </button>
+                        <SettingsButton />
                     </Navbar.Collapse>
                 </Navbar>
                 <Switch>
