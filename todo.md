@@ -1,6 +1,7 @@
 views
+change logo
+animatin with logo
 chosen tab design on navbar
-background mask static image
 log in/ sign up page
 log in/ sign up sweetalert
 star button text color
@@ -9,6 +10,8 @@ choose themes
 add sound affect
 refactor
 background button
+
+~~background mask static image~~
 
 ~~dynamic background~~
 

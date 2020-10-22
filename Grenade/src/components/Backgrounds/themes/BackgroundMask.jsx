@@ -3,7 +3,7 @@ const BackgroundMask = {
         color: {
             value: "",
         },
-        image: `url("https://cdn.matteobruni.it/images/particles/background3.jpg")`,
+        image: "url('images/BackgroundMask.jpg')",
         position: "",
         repeat: "",
         size: "",
