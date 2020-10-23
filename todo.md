@@ -9,7 +9,6 @@ hello animation
 choose themes
 add sound affect
 refactor
-background button
 
 ~~background mask static image~~
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { oneOfType, bool, object } from "prop-types";
 
 import Navbar from "react-bootstrap/Navbar";
@@ -22,6 +22,11 @@ import AboutUs from "../views/AboutUs";
 import SettingsButton from "../buttons/SettingsButton/SettingsButton";
 
 const MainNavBar = ({ user }) => {
+    const [selectedTab, setSelectedTab] = useState("/");
+    const onSelect = (path) => {
+        setSelectedTab(path);
+    };
+
     return (
         <span className="w-100 fix-spacing">
             <BrowserRouter>
@@ -42,7 +47,7 @@ const MainNavBar = ({ user }) => {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mr-auto">
                             <td>
-                                <Nav.Link exact="true" href="/">
+                                <Nav.Link onSelect={onSelect} href="/">
                                     <FontAwesomeIcon
                                         icon={faHome}
                                         size="2x"
@@ -87,7 +92,7 @@ const MainNavBar = ({ user }) => {
                     </Navbar.Collapse>
                 </Navbar>
                 <Switch>
-                    <Route exact path="/" component={Home}></Route>
+                    <Route path="/" component={Home}></Route>
                     <Route path="/games" component={Games}></Route>
                     <Route path="/users" component={Users}></Route>
                     <Route path="/about-us" component={AboutUs}></Route>
