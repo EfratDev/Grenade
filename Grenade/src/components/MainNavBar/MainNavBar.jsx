@@ -32,6 +32,7 @@ const MainNavBar = ({ user }) => {
             <BrowserRouter>
                 <Navbar
                     collapseOnSelect
+                    defaultActiveKey="/"
                     expand="lg"
                     fixed="fixed-top"
                     variant="dark"
@@ -47,7 +48,11 @@ const MainNavBar = ({ user }) => {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mr-auto">
                             <td>
-                                <Nav.Link onSelect={onSelect} href="/">
+                                <Nav.Link
+                                    exact="true"
+                                    onSelect={onSelect}
+                                    href="/"
+                                >
                                     <FontAwesomeIcon
                                         icon={faHome}
                                         size="2x"
@@ -92,7 +97,7 @@ const MainNavBar = ({ user }) => {
                     </Navbar.Collapse>
                 </Navbar>
                 <Switch>
-                    <Route path="/" component={Home}></Route>
+                    <Route exact path="/" component={Home}></Route>
                     <Route path="/games" component={Games}></Route>
                     <Route path="/users" component={Users}></Route>
                     <Route path="/about-us" component={AboutUs}></Route>
