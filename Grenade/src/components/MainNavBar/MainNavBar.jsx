@@ -3,7 +3,7 @@ import { oneOfType, bool, object } from "prop-types";
 
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import { Route, Switch, BrowserRouter } from "react-router-dom";
+import { Route, Switch, BrowserRouter, Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -32,7 +32,6 @@ const MainNavBar = ({ user }) => {
             <BrowserRouter>
                 <Navbar
                     collapseOnSelect
-                    defaultActiveKey="/"
                     expand="lg"
                     fixed="fixed-top"
                     variant="dark"
@@ -48,10 +47,11 @@ const MainNavBar = ({ user }) => {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mr-auto">
                             <td>
-                                <Nav.Link
+                                <Link
+                                    className="nav-link"
                                     exact="true"
                                     onSelect={onSelect}
-                                    href="/"
+                                    to="/"
                                 >
                                     <FontAwesomeIcon
                                         icon={faHome}
@@ -59,37 +59,37 @@ const MainNavBar = ({ user }) => {
                                         color="rgb(199, 67, 67)"
                                     />
                                     <p>Home</p>
-                                </Nav.Link>
+                                </Link>
                             </td>
                             <td>
-                                <Nav.Link href="/games">
+                                <Link className="nav-link" to="/games">
                                     <FontAwesomeIcon
                                         icon={faGamepad}
                                         size="2x"
                                         color="rgb(7, 182, 80)"
                                     />
                                     <p>Games</p>
-                                </Nav.Link>
+                                </Link>
                             </td>
                             <td>
-                                <Nav.Link href="/users">
+                                <Link className="nav-link" to="/users">
                                     <FontAwesomeIcon
                                         icon={faGhost}
                                         color="rgb(116, 35, 221)"
                                         size="2x"
                                     />
                                     <p>Users</p>
-                                </Nav.Link>
+                                </Link>
                             </td>
                             <td>
-                                <Nav.Link href="/about-us">
+                                <Link className="nav-link" to="/about-us">
                                     <FontAwesomeIcon
                                         icon={faQuestionCircle}
                                         color="rgb(47, 153, 224)"
                                         size="2x"
                                     />
                                     <p>About Us</p>
-                                </Nav.Link>
+                                </Link>
                             </td>
                         </Nav>
                         <LoginStatus user={user} />
