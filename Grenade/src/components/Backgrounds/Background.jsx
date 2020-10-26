@@ -7,6 +7,7 @@ import Default from "./themes/Default";
 import Connect from "./themes/Connect";
 import MultipleImages from "./themes/MultipleImages";
 import Shadow from "./themes/Shadow";
+import "./Background.css";
 
 const Backgrounds = {
     BackgroundMask: BackgroundMask,
@@ -22,15 +23,12 @@ const styles = {
         background: "#222",
         justifyContent: "center",
         alignItems: "center",
+        padding: 0,
     },
 };
 
 function Background({ type }) {
-    return (
-        <div style={styles.root}>
-            <Particles params={type} />;
-        </div>
-    );
+    return <Particles params={type} />;
 }
 Background.propTypes = { backgroundType: PropTypes.string };
 
