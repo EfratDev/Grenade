@@ -20,6 +20,7 @@ import Games from "../views/Games";
 import Users from "../views/Users";
 import AboutUs from "../views/AboutUs";
 import SettingsButton from "../buttons/SettingsButton/SettingsButton";
+import { Background, Backgrounds } from "../Backgrounds/Background";
 
 const MainNavBar = ({ user }) => {
     const [selectedTab, setSelectedTab] = useState("/");
@@ -46,21 +47,6 @@ const MainNavBar = ({ user }) => {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mr-auto">
-                            <td>
-                                <Link
-                                    className="nav-link"
-                                    exact="true"
-                                    onSelect={onSelect}
-                                    to="/"
-                                >
-                                    <FontAwesomeIcon
-                                        icon={faHome}
-                                        size="2x"
-                                        color="rgb(199, 67, 67)"
-                                    />
-                                    <p>Home</p>
-                                </Link>
-                            </td>
                             <td>
                                 <Link className="nav-link" to="/games">
                                     <FontAwesomeIcon
@@ -97,10 +83,11 @@ const MainNavBar = ({ user }) => {
                     </Navbar.Collapse>
                 </Navbar>
                 <Switch>
+                    <Background type={user.background || Backgrounds.Default} />
                     <Route exact path="/" component={Home}></Route>
-                    <Route path="/games" component={Games}></Route>
-                    <Route path="/users" component={Users}></Route>
-                    <Route path="/about-us" component={AboutUs}></Route>
+                    <Route exact path="/games" component={Games}></Route>
+                    <Route exact path="/users" component={Users}></Route>
+                    <Route exact path="/about-us" component={AboutUs}></Route>
                 </Switch>
             </BrowserRouter>
         </span>

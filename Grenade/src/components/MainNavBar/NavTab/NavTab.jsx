@@ -1,17 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function NavTab({ onSelect, isExact, href }) {
+function NavTab({ onSelect, isSelected, href }) {
     return (
         <td>
-            <Nav.Link onSelect={onSelect} exact={true} href="/">
+            <Link className="nav-link" onSelect={onSelect} to="/">
                 <FontAwesomeIcon
                     icon={faHome}
                     size="2x"
                     color="rgb(199, 67, 67)"
                 />
                 <p>Home</p>
-            </Nav.Link>
+            </Link>
         </td>
     );
 }

@@ -17,18 +17,12 @@ const Backgrounds = {
     Shadow: Shadow,
 };
 
-const styles = {
-    root: {
-        height: "100%",
-        background: "#222",
-        justifyContent: "center",
-        alignItems: "center",
-        padding: 0,
-    },
-};
-
 function Background({ type }) {
-    return <Particles params={type} />;
+    return (
+        <span className="particlesContainer">
+            <Particles params={type}></Particles>
+        </span>
+    );
 }
 Background.propTypes = { backgroundType: PropTypes.string };
 

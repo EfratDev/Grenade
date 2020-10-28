@@ -8,6 +8,7 @@ const App = () => {
         username: "Ravel the Third",
         link: "https://github.com/FlowerPower2/Snake",
         gamesID: [],
+        background: null,
     };
     // let creator = {
     //     id: 1,
