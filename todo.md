@@ -1,6 +1,9 @@
 views
 change logo
-animatin with logo
+animation with logo
+prototypes
+fix navbar selected tab
+fix navbar resposivity
 chosen tab design on navbar
 log in/ sign up page
 log in/ sign up sweetalert
